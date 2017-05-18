@@ -53,6 +53,7 @@ exports.loadCss = (isProduction) => {
 	const cssProd = ExtractTextPlugin.extract({
 						fallback: 'style-loader',
 						use: [
+							'style-loader',
 							{
 								loader: 'css-loader',
 								options: {
