@@ -26,10 +26,10 @@ I guess this must be some mistake I have made in the configuration options for E
 
 ### WINDOWS RESULT
 On Windows the build completes but the background image paths are broken.
-There are no errors in the terminal//
+There are no errors in the terminal.
 
 ### MAC RESULT
-On mac the build errors out with the following messages, the HTMl and JS build but the CSS is not there at all.
+On Mac the build errors out with the following messages, the HTML and JS build but the CSS is not there at all.
 
     ERROR in ./~/css-loader?{"importLoaders":1}!./~/stylus-loader?{"use":[null]}!./src/styles/app.styl
     Module build failed: Error: Plugin should be a function
