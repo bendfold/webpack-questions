@@ -16,7 +16,7 @@ My output folder structure looks like this
 
 If I run ``serve`` or ``static``, the images paths in the HTML and CSS are as expected and everything works fine.
 
-However, if I run ``prod`` only the HTML image path is correct.
+However, if I run ``prod`` only the HTML image path is correct, because the CSS is just in the head of the page.
 
 The ``background-image`` in the CSS looks like this: ``images/ubuntu-512.png``.
 
