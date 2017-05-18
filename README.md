@@ -24,4 +24,34 @@ Whereas I want it to look like this: ``../images/ubuntu-512.png``.
 
 I guess this must be some mistake I have made in the configuration options for ExtractTextPlugin?
 
+### WINDOWS RESULT
+On Windows the build completes but the background image paths are broken.
+There are no errors in the terminal//
+
+### MAC RESULT
+On mac the build errors out with the following messages, the HTMl and JS build but the CSS is not there at all.
+
+    ERROR in ./~/css-loader?{"importLoaders":1}!./~/stylus-loader?{"use":[null]}!./src/styles/app.styl
+    Module build failed: Error: Plugin should be a function
+        at /Users/owen/_dev/webpack-questions/node_modules/stylus-loader/index.js:68:17
+
+AND
+
+    ERROR in ./src/styles/app.styl
+    Module build failed: ModuleBuildError: Module build failed: Error: Plugin should be a function
+        at /Users/owen/_dev/webpack-questions/node_modules/stylus-loader/index.js:68:17
+
+AND
+
+    ERROR in /Users/owen/_dev/webpack-questions/node_modules/extract-text-webpack-plugin/loader.js??ref--3-0!/Users/owen/_dev/webpack-questions/node_modules/style-loader/index.js!/Users/owen/_dev/webpack-questions/node_modules/style-loader/index.js!/Users/owen/_dev/webpack-questions/node_modules/css-loader/index.js??ref--3-3!/Users/owen/_dev/webpack-questions/node_modules/stylus-loader/index.js??ref--3-4!/Users/owen/_dev/webpack-questions/src/styles/app.styl doesn't export content
+
+AND
+
+    ERROR in ./~/css-loader?{"importLoaders":1}!./~/stylus-loader?{"use":[null]}!./src/styles/app.styl
+    Module build failed: Error: Plugin should be a function
+        at /Users/owen/_dev/webpack-questions/node_modules/stylus-loader/index.js:68:17
+
+
+
+
 
