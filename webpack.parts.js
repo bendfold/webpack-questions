@@ -53,7 +53,6 @@ exports.loadCss = (isProduction) => {
 	const cssProd = ExtractTextPlugin.extract({
 						fallback: 'style-loader',
 						use: [
-							'style-loader',
 							{
 								loader: 'css-loader',
 								options: {
@@ -66,7 +65,8 @@ exports.loadCss = (isProduction) => {
 									use: [nib()],
 								}
 							}
-						]
+						],
+						publicPath: '../'
 					});
 
 	const cssConfig = isProduction ? cssProd : cssDev;
